@@ -1,0 +1,7 @@
+npm install ngx-toastr --save
+
+import {ToastrModule} from 'ngx-toastr';
+ToastrModule.forRoot()
+
+private toastrService: ToastrService
+this.toastrService.success('.....');
