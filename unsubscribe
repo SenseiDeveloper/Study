@@ -1,0 +1,12 @@
+unsubscribe: Subject<void>  = new Subject<void>();
+
+this.categoriesService.getCategories()
+      .takeUntil(this.unsubscribe)
+      .subscribe((categories: Category[]) =>{
+        
+      });
+      
+ ngOnDestroy(){
+    this.unsubscribe.next();
+
+  }
