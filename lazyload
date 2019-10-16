@@ -1,0 +1,25 @@
+#App routing:
+const routes: Routes = [
+  {path: '', component: HomeComponent},
+  {path: 'system', loadChildren: './system/system.module#SystemModule'}
+];
+
+#System routing:
+const routes: Routes = [
+  {path: '', component: SystemComponent,children: [
+    {path:'createpost', component: CreatepostComponent},
+    {path:'post', component: PostComponent},
+    {path:'category', component: CategoryComponent},
+    {path:'statistic', component: StatisticComponent}
+  ]}
+];
+
+-delete system.module from imports app.module;
+
+PreloadStrategy in app-routing:
+@NgModule({
+  imports: [RouterModule.forRoot(routes,{
+    preloadingStrategy: PreloadAllModules
+  })],
+  exports: [RouterModule]
+})
