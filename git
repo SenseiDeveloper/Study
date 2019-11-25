@@ -30,5 +30,11 @@ co = checkout
 #git reset --hard HEAD^1 - ми повернемо код на 1 комінт назад;
 #git reset --soft HEAD^1 - ми повернемо код на 1 комінт назад, при цьому код залишиться в файлі;
 
+#git branch - покаже всі Pull requests;
+#git branck -v - покажить останні коміти в вибраній вітці;
+#git branch NAME - СТВОРИТЬ  нову вітку з назвою NAME;
+#git checkout NAME - перейдем у вітку NAME;
+#git branch -m NAME - перейменуємо вітку на NAME;
 
+#git merge Name - обєднає 2 вітки , вибрану і Name;
 
