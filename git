@@ -25,3 +25,10 @@ g = log --graph --abbrev-commit --decorate --all --format=format:'%C(bold blue)%
 br = branch
 co = checkout
 
+#git checkout - відмінить зміни , верне код із останнього коміта;
+#git reset - відмінить зміни, які були внесені після команди git add;
+#git reset --hard HEAD^1 - ми повернемо код на 1 комінт назад;
+#git reset --soft HEAD^1 - ми повернемо код на 1 комінт назад, при цьому код залишиться в файлі;
+
+
+
